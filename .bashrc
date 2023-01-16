@@ -5,6 +5,20 @@
  #   *) return;;
 #esac
 
+BRed='\e[1;31m'
+
+MYNAME='Michael McCarthy'
+export MYNAME
+
+printf "Welcome ${MYNAME}!\n"
+
+print_before_the_prompt () {
+    printf "\n%s\n" "$PWD"
+}
+
+PROMPT_COMMAND=print_before_the_prompt
+
+
 # Path to your oh-my-bash installation.
 export OSH='/home/michael/.oh-my-bash'
 
