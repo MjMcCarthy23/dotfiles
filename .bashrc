@@ -1,8 +1,9 @@
+
 # Enable the subsequent settings only in interactive sessions
-case $- in
-  *i*) ;;
-    *) return;;
-esac
+#case $- in
+ # *i*) ;;
+ #   *) return;;
+#esac
 
 # Path to your oh-my-bash installation.
 export OSH='/home/michael/.oh-my-bash'
