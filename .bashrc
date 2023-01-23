@@ -12,15 +12,28 @@ export MYNAME
 
 printf "Welcome ${MYNAME}!\n"
 
-print_before_the_prompt () {
-    printf "\n%s\n" "$PWD"
-}
+# Quartus Path
+export PATH=/home/michael/intelFPGA_lite/22.1std/quartus/bin:$PATH
 
-PROMPT_COMMAND=print_before_the_prompt
+#MATLAB Path
+export PATH=/home/michael/.Matlab-michael/bin:$PATH
 
 
 # Path to your oh-my-bash installation.
 export OSH='/home/michael/.oh-my-bash'
+
+# ALIASES
+# TERM 5 courses
+# 5010
+alias 5010='cd /home/michael/School/term-5/5010/'
+#5100
+alias 5100='cd /home/michael/School/term-5/5100/'
+#5200
+alias 5200='cd /home/michael/School/term-5/5200/'
+#5400
+alias 5400='cd /home/michael/School/term-5/5400/'
+#5500
+alias 5500='cd /home/michael/School/term-5/5500/'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -150,3 +163,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+export QSYS_ROOTDIR="/home/michael/intelFPGA_lite/22.1std/quartus/sopc_builder/bin"
